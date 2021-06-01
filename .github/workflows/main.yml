@@ -37,7 +37,7 @@ jobs:
 
       # Generate the website
       - name: Publish
-        run: dotnet publish SPABlazor.csproj  --configuration Release
+        run: dotnet publish SPABlazor.csproj -c Release -o release --nologo
 
       # Publish the website
       - name: GitHub Pages action
